@@ -1,0 +1,112 @@
+/* LAYOUT */
+html, body, article, .glass::before {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.glass {
+  position: relative;
+}
+
+.glass::before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: '';
+}
+
+/* BACKGROUNDS */
+body {
+  background-image: url(bg-img.jpg);
+  background-size: cover;
+}
+
+/*
+.glass::before {
+    background-image: url(bg-img.jpg);
+    background-size: cover;
+    opacity: 0.4;
+    -webkit-filter: blur(5px);
+}
+*/
+
+/*
+.glass {
+    background-color: white;
+}
+*/
+
+/* TRANSFORMATIONS */
+
+/*
+.glass, .glass::before {
+  transform: translateY(0);
+  transform: translateY(0) translateZ(0);
+}
+*/
+
+#top-logo {
+    
+    -webkit-filter: blur(5px);
+    overflow: hidden;
+}
+
+
+
+/*
+#top-logo {
+    width: 100vw;
+    margin: auto;
+}
+*/
+
+#top-logo img {
+    width: 35vw;
+    margin: auto;
+}
+
+.div-hr {
+    display: inline-block;
+    width: 45vw;
+    z-index: -1;
+}
+
+#nav-icon {
+    display: inline-block;
+    width: 2vw;
+}
+
+#nav-icon img {
+    width: inherit;
+}
+
+#left-hr {
+    position: absolute;
+    left: 0vw;
+}
+
+#right-hr {
+    position: absolute;
+    right: 0vw;
+}
+
+#main-entries {
+    width: 82vw;
+    margin: auto;
+}
+
+.main-entry-icon {
+    display: inline-block;
+    width: 8vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.main-entry-icon img {
+    width: inherit;
+}
